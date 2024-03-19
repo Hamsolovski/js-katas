@@ -7,7 +7,16 @@ If the argument is empty, null or undefined, return "Hello World":
 
 */
 
+
+
 // TODO add your code here
+function sayHello(firstName) {
+    if (firstName == null || firstName.length == 0){
+        return "Hello World";
+    } else {
+        return 'Hello ' + firstName;
+    };
+}
 
 // Begin of tests
 const assert = require("assert");
@@ -21,4 +30,4 @@ assert.strictEqual(sayHello(null), "Hello World");
 assert.strictEqual(sayHello(), "Hello World");
 // End of tests
 
-console.log("🎉");
+console.log("Bravo");

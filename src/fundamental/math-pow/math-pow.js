@@ -17,6 +17,29 @@ You can't use Math.pow(), the goal is to recreate this function!
 */
 
 // TODO add your code here
+function pow(num1, num2)
+{   if (typeof num1 != "number" || typeof num2 != "number") 
+    {
+        return NaN;         
+    } else if (num2 == 0) {
+        return 1;
+    } else if (num2 == 1) {
+        return num1;
+    }
+        else 
+    {
+        let myResult = num1
+        for (let i = 1; i < num2; i++) {
+            myResult *= num1;
+        }
+        return myResult
+        
+    }
+    
+
+
+}
+
 
 // Begin of tests
 const assert = require("assert");

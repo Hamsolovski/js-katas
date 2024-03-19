@@ -7,6 +7,17 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 
 */
 
+function sum(myNumber) {
+    let myFinalNumber = 0;
+
+    for (let i = 0; i < myNumber; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            myFinalNumber += i;
+        }
+    }
+    return myFinalNumber;
+
+}
 // TODO add your code here
 
 // Begin of tests

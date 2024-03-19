@@ -14,6 +14,18 @@ Don't mutate the parameter.
 
 */
 
+function inverse (numbers) {
+    if (!numbers || numbers.length === 0)
+        return [];
+    else {
+        let inversedNumbers = []
+        for (let number of numbers) {
+            inversedNumbers.push(-number);
+        }
+        return inversedNumbers;
+    }
+}
+
 // TODO add your code here
 
 module.exports = inverse;

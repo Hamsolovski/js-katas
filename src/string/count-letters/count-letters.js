@@ -18,4 +18,19 @@ Add you own tests.
 
 // TODO add your code here
 
+function countChar(word, letter){
+    if (word === null || letter === null)
+        return -1;
+    else if (letter.length != 1)
+        return -1; 
+    else {
+        let myCounter = 0
+        for (let character of word) {
+            if (character === letter) 
+                myCounter++
+        }
+        return myCounter
+    }
+}
+
 module.exports = countChar;
