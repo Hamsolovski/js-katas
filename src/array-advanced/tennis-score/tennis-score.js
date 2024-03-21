@@ -29,12 +29,25 @@ Add you own tests.
 */
 
 // TODO add your code here
+function getScore(match) {
+    if (match === null || typeof match === "array")
+        throw new TypeError()
+    else if (for (let score of match) {
+            if ((score === 1 || score === 2) && score != NaN && score != null) {
+                console.log("coucou");
+            }
+        })
+
+}
+
+console.log(getScore([1, 3, 1]))
 
 // Begin of tests
 const assert = require("assert");
 
 assert.strictEqual(typeof getScore, "function");
 assert.strictEqual(getScore.length, 1);
+
 // TODO add your tests:
 
 // End of tests
